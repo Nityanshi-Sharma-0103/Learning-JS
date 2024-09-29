@@ -37,3 +37,31 @@ const myFunction = function(){
 }
 
 console.log(typeof myFunction);
+
+
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+// Stack Memory (Primitive) - gets copy, Heap Memory (Non-Primitive) - changes in original value
+
+let myYoutubename = "niti@01dotcom"
+
+let anothername = myYoutubename;
+anothername = "chaiaurcode"
+
+console.log(anothername);
+console.log(myYoutubename);
+
+
+let userOne = {
+    email : "something@google.com",
+    upi: "123@ybl"
+}
+
+let userTwo = userOne
+
+userTwo.email = "niti@google.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
